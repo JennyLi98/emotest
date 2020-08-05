@@ -1,10 +1,10 @@
-@media (min-width: 601px) {
+@media (min-width: 1000px) {
    .main-title-m{
      display:none;
    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
    .main-title-d{
      display:none;
    }
@@ -25,7 +25,7 @@
      padding-top: 0px;
      padding-left: 10px;
      border-top: 0px;
-     margin-top:20rem;
+     margin-top:10rem;
      font-family: "Roboto";
      overflow: hidden;
    }
@@ -36,6 +36,18 @@
      font-size: 80px;
      color: white;
    }
+}
+
+.canvas-content {
+    padding: 0px 10vw;
+}
+
+.resultDisplay {
+  color: white;
+}
+
+.button-m {
+  text-align: center;
 }
 
 .TestPage {

@@ -1,22 +1,14 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Navbar, Nav, Button, Row, Col} from 'react-bootstrap';
+import {Navbar, Nav, Button} from 'react-bootstrap';
 import './../css/App.css';
 
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 
 import MLogo from './../imgs/letter_m_blue.png';
 import MainPage from './MainPage.js';
 
-const testInfo =
-[
-  [
-  "https://www.elitetrimworks.com/skin1/images/gallery/square/square%20columns_27PM.png"
-  ],
-[
-  "https://live.staticflickr.com/3514/3810627510_d9a567624a_b.jpg"
-  ]
-];
+
 
 class Main extends Component {
   constructor(){
@@ -39,7 +31,7 @@ class Main extends Component {
         <div className="content-wrapper">
           <BrowserRouter>
             <Navbar style={{backgroundColor: 'black'}} variant="dark" expand="md">
-              <img src={MLogo} width="50px" style={{marginRight: 50+'px'}}/>
+              <img src={MLogo} width="50px" alt="logo" style={{marginRight: 50+'px'}}/>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
@@ -52,6 +44,7 @@ class Main extends Component {
               </Navbar.Collapse>
             </Navbar>
             <MainPage/>
+
             <div className="push"></div>
           </BrowserRouter>
         </div>

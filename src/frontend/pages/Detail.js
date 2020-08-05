@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import CardList from './CardList.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/TestPage.css';
-import {Button} from 'react-bootstrap';
-import { withRouter } from 'react-router';
 
 class Detail extends Component {
   constructor(){

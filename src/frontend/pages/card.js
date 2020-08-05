@@ -3,19 +3,18 @@ import '../css/card.css';
 import BrainImg from '../imgs/brainIcon.png';
 import ObjDisc from '../imgs/objdisc.png';
 import { withRouter } from 'react-router';
-import {Link} from 'react-router-dom';
 
 const img = [BrainImg, ObjDisc];
 
 const Card = (props) => {
-    if (props.curId == props.imgid - 1) {
+    if (props.curId === props.imgid - 1) {
         return (
           <div className='te'>
             <img src={img[1]} alt='cannot display'  className="imgDisplay"/>
             <p>
               Step {props.imgid}
             </p>
-            <h1>{props.name}</h1>
+            <h1 className="cardTag">{props.name}</h1>
           </div>
       );
     }
@@ -25,7 +24,7 @@ const Card = (props) => {
           <p>
             Step {props.imgid}
           </p>
-          <h1>{props.name}</h1>
+          <h1 className="cardTag">{props.name}</h1>
         </div>
     );
 }

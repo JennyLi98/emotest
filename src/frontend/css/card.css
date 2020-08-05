@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100&display=swap');
 
-@media (max-width: 400px) {
-   .te {
-    width: 80vw;
-  }
-
-  .te1 {
-   width: 80vw;
- }
-}
 
 .te{
   text-align: center;
@@ -36,13 +27,28 @@
   vertical-align: middle;
 }
 
-@media (max-width: 600px) {
-   .te {
-    width: 80vw;
-    height: 80vw;
-    margin: 0px;
-    margin-top: 20px;
-  }
+@media (max-width: 1000px) {
+   .cardTag {
+     visibility: hidden;
+   }
+}
+
+@media (min-width: 1000px) {
+   .cardTag {
+     visibility: visible;
+   }
+}
+
+@media (max-width: 1500px) {
+   .cardTag {
+     font-size: 1.5rem;
+   }
+}
+
+@media (min-width: 1500px) {
+   .cardTag {
+     font-size: 2.5rem;
+   }
 }
 
 
